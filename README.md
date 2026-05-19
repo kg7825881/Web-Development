@@ -9,7 +9,7 @@ Welcome to my central repository for web development practice projects, landing 
 | Project Name | Tech Stack | Live Demo / Folder Link | Description |
 | :--- | :--- | :--- | :--- |
 | **Design Showcase 01** | HTML5, CSS3 | [View Files](./Designs/) | A responsive web design experiment focusing on clean layouts, structured HTML structures, and asset integration. |
-| *Next Project* | *Upcoming...* | *[Link]* | *Description of your next build.* |
+| *Next Project* | *Upcoming...* | *[Link]* | *Description of my next build.* |
 
 ---
 
