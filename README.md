@@ -18,15 +18,3 @@ Welcome to my central repository for web development practice projects, landing 
 * **Styling Paradigms:** Flexbox, CSS Grid, Media Queries, Responsive Design
 * **Version Control:** Git & GitHub
 
----
-
-## 📂 Repository Structure
-
-```text
-Web-Development/
-├── Designs/                 # Current design files (HTML, CSS, images)
-│   ├── design1.html
-│   ├── design1.css
-│   └── [images/assets]
-├── [Future-Project-2]/     # Your next project folder
-└── README.md                # This navigation hub
