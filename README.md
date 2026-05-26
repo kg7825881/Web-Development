@@ -9,7 +9,8 @@ Welcome to my central repository for web development practice projects, landing 
 | Project Name | Tech Stack | Live Demo / Folder Link | Description |
 | :--- | :--- | :--- | :--- |
 | **Design Showcase 01** | HTML5, CSS3 | [View Files](./Designs/) | A responsive web design experiment focusing on clean layouts, structured HTML structures, and asset integration. |
-| **Design Showcase 02** | HTML5, CSS3 | [View Files](./Design2/) | A responsive web design experiment focusing on clean layouts, structured HTML structures, and asset integration. |
+| **Design Showcase 02** | Flex Layout | [View Files](./Design2/) | A responsive web design experiment focusing on clean layouts, structured HTML structures, and asset integration. |
+| **Design Showcase 03** | Grid Layout | [View Files](./Design3/) | A responsive web design experiment focusing on clean flex layouts, structured HTML structures, and asset integration. |
 | *Next Project* | *Upcoming...* | *[Link]* | *Description of my next build.* |
 
 ---
