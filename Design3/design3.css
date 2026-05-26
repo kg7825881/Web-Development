@@ -36,7 +36,7 @@ html, body {
     grid-template-rows: 1.5fr 1.5fr 1.9fr 1.9fr 1.5fr 1.5fr;
     justify-content: center;
     align-content: center;
-    background-color: rgb(40, 40, 40);
+    background-color: rgb(21, 21, 21);
     border-radius: 30px;
     padding: 20px;
     gap: 20px;
@@ -262,21 +262,44 @@ html, body {
     grid-row: 5 / 7;
     grid-column: 1 / 4;
     background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding: 30px;
 }
 
 .box10 .box10-content {
-    width: 300px;
-    background-color: bisque;
+    width: 280px;
 }
 
 .box10 .box10-content h3 {
-    font-size: 24px;
+    font-size: 20px;
     font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.box10 .box10-content p {
+    margin-top: 10px;
+    font-size: 12px;
+    color: rgb(110, 110, 110);
 }
 
 .box11 {
     grid-row: 5 / 7;
     grid-column: 4 / 6;
     background-color: transparent;
+    padding: 20px 30px;
+}
+
+.box11 .box11-title {
+    font-size: 13px;
+    color: grey;
+}
+
+.box11 .box11-main-head {
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    color: white;
+    margin-top: 10px;
 }
 
