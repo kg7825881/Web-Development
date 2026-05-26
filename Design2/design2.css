@@ -8,27 +8,22 @@
 }
 
 html, body {
-    width: 100%;
-    height: 100%;
     background-color: rgb(242, 143, 68);
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     margin: 0;
     padding: 0;
-
 }
 
 .content-body {
     width: calc(100% - 20px);
     max-width: 1440px;
     min-height: calc(100vh - 40px);
-    background-color: rgb(250, 242, 235);
+    background-color: rgb(241, 224, 208);
     border-radius: 30px;
     padding: 10px;
     margin: 10px;
     box-sizing: border-box;
     flex-direction: column;
+    overflow: auto;
 }
 
 .nav-bar {
@@ -202,7 +197,7 @@ html, body {
 }
 
 .middle-section {
-    flex: 1;                       /* Dynamically budgets remaining grid track space */
+    flex: 1;                       
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -211,9 +206,9 @@ html, body {
 
 
 .middle-section img{
-    width: 100%;                   /* 👈 FIXED: Image scales fluidly based on screen size */
-    max-width: 720px;              /* 👈 FIXED: Prevents image from growing monstrously large */
-    height: 720px;                  /* 👈 FIXED: Maintains exact aspect ratio properties */
+    width: 100%;                   
+    max-width: 720px;              
+    height: 720px;                  
     object-fit: contain;
     margin-top: 10px;
 }
