@@ -36,7 +36,7 @@ html, body {
     grid-template-rows: 1.5fr 1.5fr 1.9fr 1.9fr 1.5fr 1.5fr;
     justify-content: center;
     align-content: center;
-    background: linear-gradient(331deg,rgba(21, 21, 21, 1) 82%, rgba(71, 70, 70, 1) 100%);
+    background: linear-gradient(331deg,rgba(26, 24, 24, 1) 82%, rgba(99, 99, 99, 1) 100%);
     border: 15px solid black;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.8);
     border-radius: 30px;
@@ -45,7 +45,8 @@ html, body {
 }
 
 .box {
-    border: 2px solid black;
+    border: 1px solid rgb(58, 58, 58);
+    outline: 3px solid black;
     border-radius: 20px;
     padding: 20px;
 }
@@ -136,11 +137,12 @@ html, body {
     width: 45px;
     height: 45px;
     background-color:  black;
-    border: 1px solid rgb(104, 103, 103, 0.8);
+    border: 1px solid rgba(91, 91, 91, 0.8);
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+    outline: 2px solid black;
 }
 
 .box4 .inner-box:hover {
