@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html, body {
+            margin: 0;
+            padding: 30px 30px 0 30px;
+        }
+        nav {
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid rgb(184, 184, 184);
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding: 30px;
+        }
+        .nav-logo img{
+            width: 150px;
+            height: 50px;
+        }
+        .nav-bar {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .side-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .box1 {
+            width: 110px;
+            height: 35px;
+            font-size: 15px;
+            background-color: rgb(255, 214, 64);
+            border-radius: 5px;
+            font-family: "Inter", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(51, 51, 51);
+        }
+
+        .box2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            font-family: "Inter", sans-serif;
+            gap: 5px;
+            color: rgb(55, 53, 53);
+        }
+        .box2 .icon1 {
+            font-size: 18px;
+            color: rgb(81, 79, 79);
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 50px 20px 20px 20px;
+            gap: 5px;
+        }
+        .center .center-heads {
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+        }
+        .center .center-heads h1 {
+            font-family: 'Inter',Helvetica,Arial,Lucida,sans-serif;
+            font-weight: 500;
+            font-size: 50px;
+            letter-spacing: 0.5px;
+        }
+        .center .center-heads .micro-icon {
+            font-size: 55px;
+        }
+        .sub-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 20px;
+        }
+        .sub-text .sub-title {
+            font-size: 18px;
+            color: grey;
+            font-weight: lighter;
+            letter-spacing: 1px;
+            font-family: "Inter", sans-serif;
+            text-align: center;
+        }
+        .sub-text .sub-box {
+            width: 60%;
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 214, 64);
+            font-family: "Inter", sans-serif;
+            border-radius: 10px;
+            gap: 5px;
+        }
+        .sub-text .sub-box p {
+            font-size: 14px;
+        }
+        .last-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+        .last-text img {
+            width: 60px;
+            border-radius: 50%;
+        }
+        .last-text h2 {
+            font-size: 25px;
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            color: grey;
+        }
+        .last-text h2 span {
+            font-size: 17px;
+            font-weight: 100;
+            /* letter-spacing: 1px; */
+        }
+        .grid-container {
+            width: 100%;
+            height: 110vh;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+        .grid-box {
+            background-color: rgb(242, 241, 237);
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            font-family: "Inter", sans-serif;
+        }
+        .grid-box .grid-last-text {
+            margin: 0;
+            font-size: 9px;
+        }
+        .grid-box .upper1 {
+            font-size: 22px;
+            font-weight: 500;
+            margin: 0;
+        }
+        .grid-box .upper2 {
+            font-size: 18px;
+            font-weight: 500;
+            margin: 15px;
+        }
+        .grid-box .button-grid {
+            width: 160px;
+            height: 40px;
+            font-size: 15px;
+            background-color: rgb(255, 214, 64);
+            border-radius: 5px;
+            font-family: "Inter", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(51, 51, 51);
+        }
+        .grid-box .grid-seclast-text {
+            font-size: 12px;
+            margin: 10px;
+        }
+        .second-last-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin: 50px;
+        }
+        .second-last-container .left-content {
+            width: 500px;
+            font-family: "Inter", sans-serif;
+            text-align: left;
+        }
+        .second-last-container .left-content h2 {
+            font-size: 30px;
+            font-weight: 600;
+            margin: 0;
+        }
+        .second-last-container .left-content p {
+            font-size: 15px;
+            margin-top: 10px;
+            color: rgb(57, 57, 57);
+        }
+        .second-last-container .right-form form{
+            width: 400px;
+            height: 260px;
+            background-color: rgb(46, 46, 46);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: "Inter", sans-serif;
+        }
+        .right-form form legend {
+            font-size: 25px;
+            color: rgb(6, 182, 209);
+            margin-top: 0;
+        }
+        .right-form form label {
+            font-size: 20px;
+            color: white;
+            margin-top: 10px;
+        }
+        .right-form form input {
+            width: 265px;
+            height: 30px;
+            border-radius: 0%;
+        }
+        .right-form form .right-button {
+            padding: 10px;
+            font-size: 14px;
+            height: 45px;
+            background-color: rgb(255, 214, 64);
+            border: 0cap;
+        }
+        @media (max-width: 450px) {
+            nav {
+                flex-direction: row;
+                height: 10vh;
+                padding: 20px 0;
+                background-color: aquamarine;
+                text-align: center;
+            }
+            .nav-logo {
+                font-size: 10px;
+            }
+            .nav-bar {
+                font-size: 14px;
+                flex-direction: row;
+                gap: 20px;
+            }
+        }
+
+        @media screen and (min-width: 451px) and (max-width: 780px) {
+            nav {
+                flex-direction: row;
+                height: 10vh;
+                padding: 20px 0;
+                background-color: lightblue;
+            }
+            .nav-logo {
+                font-size: 10px;
+            }
+            .nav-bar {
+                flex-direction: row;
+                font-size: 14px;
+                gap: 20px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <img src="logo.png" alt="">
+        </div>
+        <ul class="nav-bar">
+            <li>Products</li>
+            <li>Buy</li>
+            <li>Renew</li>
+            <li>Support</li>
+            <li>Learn</li>
+            <li>Company</li>
+        </ul>
+        <div class="side-box">
+            <div class="box1">Download</div>
+            <div class="box2">
+                <i class="ri-global-line icon1"></i>
+                <span>English</span>
+            </div>
+            <div><i class="fa-solid fa-magnifying-glass fa-flip-horizontal" style="color: rgb(125, 125, 125);"></i></div>
+        </div>
+    </nav>
+    <div class="center">
+        <div class="center-heads">
+            <h1>Download UltraEdit for Windows</h1>
+            <i class="fa-brands fa-microsoft micro-icon"></i>
+        </div>
+        <div class="sub-text">
+            <div class="sub-title">
+                <p>Download and try UltraEdit before you buy it! This download <br>includes the full Windows version of the text editor.</p>
+            </div>
+            <div class="sub-box">
+                <i class="fa-brands fa-apple"></i>
+                <i class="fa-brands fa-linux"></i>
+                <p>Download Mac or Linux version</p>
+                <i class="ri-arrow-right-line"></i>
+            </div>
+        </div>
+        <div class="last-text">
+            <img src="Main-icon.png" alt="">
+            <h2>Download UltraEdit <span>v2025.2.0.24 (released 2026-04-10) | Latest changes</span></h2>
+           
+        </div>
+    </div>
+    <div class="grid-container">
+        <div class="grid-box">
+            <h5 class="upper1">English</h5>
+            <h5 class="upper2">Includes all languages</h5>
+            <div class="button-grid">Download 64-bit</div>
+            <p class="grid-seclast-text">SHA256</p>
+            <p class="grid-last-text">F57CF8F7D1FE1F065679AD24A2BC428BE9FB61D29761BD179122334B2D41F152</p>
+        </div>
+        <div class="grid-box">
+            <h5 class="upper1">Deutsch</h5>
+            <h5 class="upper2">German</h5>
+            <div class="button-grid">Download 64-bit</div>
+            <p class="grid-seclast-text">SHA256</p>
+            <p class="grid-last-text">F3EC896D37D56D2A3194A34AC36AF9DE34DDBBE5CCF1FCB7622DC13E08956E8F</p>
+        </div>
+        <div class="grid-box">
+            <h5 class="upper1">Italiano</h5>
+            <h5 class="upper2">Italian</h5>
+            <div class="button-grid">Download 64-bit</div>
+            <p class="grid-seclast-text">SHA256</p>
+            <p class="grid-last-text">573B376CD55246269BB2C2F7B671E6D58F26DCFAD3ED95ED00C13B250778B9B0</p>
+        </div>
+        <div class="grid-box">
+            <h5 class="upper1">Español</h5>
+            <h5 class="upper2">Spanish</h5>
+            <div class="button-grid">Download 64-bit</div>
+            <p class="grid-seclast-text">SHA256</p>
+            <p class="grid-last-text">7BA1C2263478387B1B1A0F0A058BF24F0423109A20B2786BA59BDA2500DA521B</p>
+        </div>
+        <div class="grid-box">
+            <h5 class="upper1">français</h5>
+            <h5 class="upper2">French</h5>
+            <div class="button-grid">Download 64-bit</div>
+            <p class="grid-seclast-text">SHA256</p>
+            <p class="grid-last-text">1E8C9AE9C761650FE84CABD1FDD6AB9EA4C248D3E9A1D9278482AC4302E86D93</p>
+        </div>
+        <div class="grid-box">
+            <h5 class="upper1">Português brasileiro</h5>
+            <h5 class="upper2">Brazilian Portuguese</h5>
+            <div class="button-grid">Download 64-bit</div>
+            <p class="grid-seclast-text">SHA256</p>
+            <p class="grid-last-text">71F29A75E6C50DFA7720F943E67111963F01F45A05DE24520817333CA2E63C20</p>
+        </div>
+        <div class="grid-box">
+            <h5 class="upper1">日本</h5>
+            <h5 class="upper2">Japenese</h5>
+            <div class="button-grid">Download 64-bit</div>
+            <p class="grid-seclast-text">SHA256</p>
+            <p class="grid-last-text">9E19CBF3556F7680E03D0D18C1455480D353CFFB456839853E624DFB922A0553</p>
+        </div>
+        <div class="grid-box">
+            <h5 class="upper1">한국어</h5>
+            <h5 class="upper2">Korean</h5>
+            <div class="button-grid">Download 64-bit</div>
+            <p class="grid-seclast-text">SHA256</p>
+            <p class="grid-last-text">761FFF2DB99B8BFE0656F305FCA60155613FA635A454C10ECE5AE6FA0F03CB69</p>
+        </div>
+        <div class="grid-box">
+            <h5 class="upper1">华语</h5>
+            <h5 class="upper2">Chinese</h5>
+            <div class="button-grid">Download 64-bit</div>
+            <p class="grid-seclast-text">SHA256</p>
+            <p class="grid-last-text">0AA657F48DD7FB9E7360A399BBE2DDA6ED34E2521661CCEF5B175AE5DBB6BF4D</p>
+        </div>
+        <div class="grid-box">
+            <h5 class="upper1">華語</h5>
+            <h5 class="upper2">Traditional Chinese</h5>
+            <div class="button-grid">Download 64-bit</div>
+            <p class="grid-seclast-text">SHA256</p>
+            <p class="grid-last-text">1379D830849129816B80D58DF9B7787BE525FDBEF060BD01D5D8D2515DEDEB66</p>
+        </div>
+    </div>
+    <div class="second-last-container">
+        <div class="left-content">
+            <h2>Join the UltraEdit <br>newsletter</h2>
+            <p>Sign up for our newsletter and receive emails for the latest <br>news, blogs, and special deals on UltraEdit.</p>
+        </div>
+        <div class="right-form">
+            <form action="">
+                <legend>Subscribe to our emails</legend>
+                <label for="email">Enter email address</label> <br>
+                <input id="email" type="email"> <br>
+                <button class="right-button">SIGN UP</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
