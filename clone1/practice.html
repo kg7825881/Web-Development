@@ -7,29 +7,42 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        * {
+            box-sizing: border-box;
+        }
         html, body {
             margin: 0;
-            padding: 30px 30px 0 30px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            width: 100%;
+            overflow-x: auto;
+            box-sizing: border-box;
         }
         nav {
             width: 100%;
-            height: 10vh;
+            max-width: 1200px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             border: 1px solid rgb(184, 184, 184);
             box-sizing: border-box;
             border-radius: 10px;
-            padding: 30px;
+            padding: 15px 30px;
+            gap: 20px;
         }
         .nav-logo img{
-            width: 150px;
-            height: 50px;
+            width: 130px;
+            height: auto;
+            display: block;
         }
         .nav-bar {
             list-style: none;
             display: flex;
-            gap: 30px;
+            gap: 20px;
             align-items: center;
             padding: 0;
             margin: 0;
@@ -48,7 +61,7 @@
             font-size: 15px;
             background-color: rgb(255, 214, 64);
             border-radius: 5px;
-            font-family: "Inter", sans-serif;
+            font-family: sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -73,22 +86,25 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            padding: 50px 20px 20px 20px;
-            gap: 5px;
+            padding: 40px 10px 50px 10px;
+            gap: 10px;
+            text-align: center;
+            width: 100%;
+            max-width: 800px;
         }
         .center .center-heads {
             display: flex;
             justify-content: center;
-            align-items: center;   
+            align-items: center; 
+            flex-wrap: wrap; 
         }
         .center .center-heads h1 {
             font-family: 'Inter',Helvetica,Arial,Lucida,sans-serif;
             font-weight: 500;
-            font-size: 50px;
-            letter-spacing: 0.5px;
+            font-size: clamp(28px, 4vw, 45px);
         }
         .center .center-heads .micro-icon {
-            font-size: 55px;
+            font-size: clamp(30px, 5vw, 55px);
         }
         .sub-text {
             display: flex;
@@ -96,59 +112,69 @@
             justify-content: center;
             align-items: center;
             row-gap: 20px;
+            width: 100%;
         }
         .sub-text .sub-title {
-            font-size: 18px;
+            font-size: 16px;
             color: grey;
             font-weight: lighter;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
             font-family: "Inter", sans-serif;
-            text-align: center;
+            line-height: 1.5;
         }
         .sub-text .sub-box {
-            width: 60%;
-            height: 30%;
+            padding: 12px 25px;
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: rgb(255, 214, 64);
             font-family: "Inter", sans-serif;
             border-radius: 10px;
-            gap: 5px;
+            gap: 10px;
+            cursor: pointer;
         }
         .sub-text .sub-box p {
             font-size: 14px;
+            margin: 0;
         }
         .last-text {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 10px;
-            margin-top: 30px;
+            gap: 15px;
+            margin-top: 30px 0;
+            text-align: center;
+            flex-wrap: wrap;
         }
         .last-text img {
-            width: 60px;
+            width: 50px;
             border-radius: 50%;
         }
         .last-text h2 {
-            font-size: 25px;
+            font-size: clamp(18px, 2.5vw, 25px);
             font-family: "Inter", sans-serif;
             font-weight: 400;
             color: grey;
+            margin: 0;
         }
         .last-text h2 span {
-            font-size: 17px;
+            font-size: 0.7em;
             font-weight: 100;
-            /* letter-spacing: 1px; */
+            display: inline-block;
+            margin-top: 30px;
         }
         .grid-container {
             width: 100%;
+            max-width: 1200px;
             height: 110vh;
             display: grid;
+            justify-content: center;
+            align-items: center;
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(4, 1fr);
             gap: 20px;
-            margin-bottom: 60px;
+            margin-top: 40px;
+            margin-bottom: 50px;
+            height: auto;
         }
         .grid-box {
             background-color: rgb(242, 241, 237);
@@ -157,12 +183,14 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            padding: 20px;
+            padding: 30px 20px;
             font-family: "Inter", sans-serif;
+            text-align: center;
         }
         .grid-box .grid-last-text {
             margin: 0;
             font-size: 9px;
+            margin-top: 5px;
         }
         .grid-box .upper1 {
             font-size: 22px;
@@ -194,27 +222,40 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            width: 100%;
+            max-width: 1100px;
+            margin: 80px auto 40px auto;
             padding: 20px;
-            margin: 50px;
+            box-sizing: border-box;
+            position: relative;
         }
         .second-last-container .left-content {
-            width: 500px;
+            flex: 1;                        
+            min-width: 280px;
             font-family: "Inter", sans-serif;
             text-align: left;
         }
         .second-last-container .left-content h2 {
-            font-size: 30px;
+            font-size: clamp(24px, 3vw, 32px);
             font-weight: 600;
-            margin: 0;
+            margin: 0 0 10px 0;
         }
         .second-last-container .left-content p {
             font-size: 15px;
-            margin-top: 10px;
+            margin: 0;
             color: rgb(57, 57, 57);
         }
+        .second-last-container .right-form {
+            flex-shrink: 0;
+        }
         .second-last-container .right-form form{
-            width: 400px;
-            height: 260px;
+            width: 100%;
+            max-width: 400px;
+            min-width: 290px;
+            min-height: 260px;
             background-color: rgb(46, 46, 46);
             border-radius: 20px;
             display: flex;
@@ -222,21 +263,27 @@
             justify-content: center;
             align-items: center;
             font-family: "Inter", sans-serif;
+            padding: 30px 20px;
         }
         .right-form form legend {
-            font-size: 25px;
+            font-size: 22px;
             color: rgb(6, 182, 209);
-            margin-top: 0;
+            margin-bottom: 15px;
+            text-align: center;
         }
         .right-form form label {
-            font-size: 20px;
+            font-size: 16px;
             color: white;
-            margin-top: 10px;
+            margin-bottom: 10px;
         }
         .right-form form input {
-            width: 265px;
-            height: 30px;
-            border-radius: 0%;
+            width: 100%;
+            max-width: 280px;
+            height: 35px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            margin-bottom: 15px;
         }
         .right-form form .right-button {
             padding: 10px;
@@ -245,7 +292,35 @@
             background-color: rgb(255, 214, 64);
             border: 0cap;
         }
-        @media (max-width: 450px) {
+
+        @media (max-width: 992px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+            .nav-bar {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+            .side-box {
+                width: 100%;
+                justify-content: center;
+            }
+            .grid-container {
+                grid-template-columns: 1fr 1fr;
+            }
+            .second-last-container .left-content {
+                text-align: center;
+            }
+            .second-last-container .right-form {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        /* @media (max-width: 450px) {
             nav {
                 flex-direction: row;
                 height: 10vh;
@@ -261,9 +336,9 @@
                 flex-direction: row;
                 gap: 20px;
             }
-        }
+        } */
 
-        @media screen and (min-width: 451px) and (max-width: 780px) {
+        /* @media screen and (min-width: 451px) and (max-width: 780px) {
             nav {
                 flex-direction: row;
                 height: 10vh;
@@ -279,7 +354,7 @@
                 gap: 20px;
             }
             
-        }
+        } */
     </style>
 </head>
 <body>
@@ -319,11 +394,9 @@
                 <p>Download Mac or Linux version</p>
                 <i class="ri-arrow-right-line"></i>
             </div>
-        </div>
         <div class="last-text">
             <img src="Main-icon.png" alt="">
             <h2>Download UltraEdit <span>v2025.2.0.24 (released 2026-04-10) | Latest changes</span></h2>
-           
         </div>
     </div>
     <div class="grid-container">
