@@ -27,52 +27,6 @@ import {Bookmark} from "lucide-react"
           <button>Apply Now</button>
         </div>
       </div>
-      <div className="card">
-        <div>
-        <div className="top">
-          <img src="https://images.icon-icons.com/91/PNG/512/amazon_16438.png" alt="" />
-          <button>Save <Bookmark size={15}/></button>
-        </div>
-        <div className="center">
-          <h3>Amazon <span>5 days ago</span></h3>
-          <h2>Senior UI/UX Designer</h2>
-          <div className="tag">
-            <h4>Part-Time</h4>
-            <h4>Senior Level</h4>
-          </div>
-        </div>
-        </div>
-        <div className="bottom">
-          <div className="left-block">
-            <h3>$120/hr</h3>
-            <p>Mumbai, India</p>
-          </div>
-          <button>Apply Now</button>
-        </div>
-      </div>
-      <div className="card">
-        <div>
-        <div className="top">
-          <img src="https://images.icon-icons.com/91/PNG/512/amazon_16438.png" alt="" />
-          <button>Save <Bookmark size={15}/></button>
-        </div>
-        <div className="center">
-          <h3>Amazon <span>5 days ago</span></h3>
-          <h2>Senior UI/UX Designer</h2>
-          <div className="tag">
-            <h4>Part-Time</h4>
-            <h4>Senior Level</h4>
-          </div>
-        </div>
-        </div>
-        <div className="bottom">
-          <div className="left-block">
-            <h3>$120/hr</h3>
-            <p>Mumbai, India</p>
-          </div>
-          <button>Apply Now</button>
-        </div>
-      </div>
     </div>
   )
 }
