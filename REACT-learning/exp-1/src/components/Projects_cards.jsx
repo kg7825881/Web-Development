@@ -1,5 +1,6 @@
 import React from 'react'
 import projectImg from "../assets/AI_Radio.png"
+import "../styles/Project_cards.css"
 
 const Projects_cards = () => {
   return (
