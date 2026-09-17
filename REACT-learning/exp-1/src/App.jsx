@@ -1,6 +1,6 @@
-import Cards from "./components/Cards"
+import Cards from "./components/Cards/Cards"
 import projectImg from "./assets/AI_Radio.png"
-import Projects_cards from "./components/Projects_cards"
+import Projects_cards from "./components/Projects_cards/Projects_cards"
 
  const App = () => {
 
@@ -8,9 +8,11 @@ import Projects_cards from "./components/Projects_cards"
 
   return (
     <div className="parent">
-      {arr.map(function(){
+      {arr.map(function(idx){
 
-        return <Projects_cards />
+        return <div key={idx}>
+          <Projects_cards />
+        </div>
       })}
     </div>
   )
